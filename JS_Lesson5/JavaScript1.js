@@ -30,8 +30,11 @@ function colChangeF(e, timeout) {
 
     if (timeout == undefined) {
         setTimeout(function () {
+            document.getElementById('colChangeB').removeAttribute("disabled");
             colChangeF(e, true);
         }, 3000);
+        document.getElementById('colChangeB').setAttribute("disabled", "disabled");
     }
+    
 }
 
